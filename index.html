@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chithi - Anonymous Letters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Write Your Anonymous Letter</h1>
+    <div class="mode-toggle">
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+    <div class="letter-form">
+        <textarea id="letter-input" placeholder="Write your letter here..."></textarea>
+        <div class="options">
+            <button id="submit-btn">Submit</button>
+            <p>Character count: <span id="char-count">0</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
